@@ -1,0 +1,125 @@
+
+/* horizontal box */
+.container {
+    background-color: red;
+    display: flex;
+    align-content: stretch;
+    gap: 10px;
+    padding: 0 10px;}
+.box {
+    background-color: lightblue;
+    padding: 10px;
+    margin: 10px 0;
+    flex-grow: 1;
+    text-align: center;
+}
+/* targets first and last item to make boarders or use padding */
+/* .box:first-child {
+    margin-left: 10px;
+}
+.box:last-child{
+    margin-right: 10px;
+} */
+
+/* grid container */
+.grid_container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "box1 box1 box1"
+      "box2 box3 box4"
+      "box2 box5 box5";
+      background-color: red;
+      padding: 10px;
+      margin-top: 10px;
+
+  }
+.box1, .box2, .box3, .box4, .box5 {
+    background-color: lightblue;
+    padding: 10px;
+    margin: 10px 10px;
+    flex-grow: 1;
+    text-align: center;
+
+} 
+.box1 { 
+    grid-area: box1; 
+}
+  
+.box2 { 
+    grid-area: box2; 
+
+}
+/* paragraph for box 2 */
+.two {
+    padding-top: 10px;
+    align-items: center;
+}
+.box3 { 
+    grid-area: box3; 
+}
+  
+.box4 { 
+    grid-area: box4; 
+}
+  
+.box5 { 
+    grid-area: box5; 
+}
+  
+
+/* icon container */
+.icon_container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "icon1 icon1 icon1"
+      "icon2 icon3 icon4"
+      "icon2 icon5 icon5";
+      background-color: red;
+      padding: 10px;
+      margin-top: 10px;
+
+  }
+.icon1, .icon2, .icon3, .icon4, .icon5 {
+    background-color: lightblue;
+    padding: 10px;
+    margin: 10px 10px;
+    flex-grow: 1;
+    text-align: center;
+}
+.icon1 { 
+    grid-area: icon1; 
+}
+  
+.icon2 { 
+    grid-area: icon2; 
+}
+ .img2 {
+    padding-top: 10px;
+    align-items: center;
+ } 
+.icon3 { 
+    grid-area: icon3; 
+}
+  
+.icon4 { 
+    grid-area: icon4; 
+}
+  
+.icon5 { 
+    grid-area: icon5; 
+}
+  
+/* boat icon */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
